@@ -1,0 +1,67 @@
+/* Maria Eduarda de Abreu Bastos
+Formulário solicitado em aula. */
+/*centralizar o formulário na tela */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.titulo-form {
+    text-align: center;    /* Centraliza */
+    color: #333333;        /* Cor do texto idêntica às labels */
+    font-size: 24px;       /* Tamanho da fonte */
+    margin-bottom: 20px;   /* Cria um espaço entre o título e o campo "Nome" */
+}
+/*Form configurado com Flexbox em coluna */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, select, textarea {
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #dcdcdc; /* borda suave */
+    border-radius: 6px;       /* cantos arredondados */
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff; /* Destaca suavemente ao clicar */
+}
+
+/* Passo 8: Botão submit com cor de fundo */
+button {
+    background-color: #572e79;
+    color: rgb(252, 252, 252);
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #934696; /* Cor muda ao passar o mouse */
+}
