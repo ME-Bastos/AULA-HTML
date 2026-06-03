@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace UninoveMvc.Controllers // 💡 Se o seu projeto usar outro nome, ajuste aqui
+namespace AULA_HTML.Controllers
 {
     //Herdando de Controller
     public class AlunoController : Controller
@@ -8,20 +8,20 @@ namespace UninoveMvc.Controllers // 💡 Se o seu projeto usar outro nome, ajust
         //Método Index() com dados na ViewBag
         public IActionResult Index()
         {
-            ViewBag.Nome = "Seu Nome Completo";
+            ViewBag.Nome = "Joãozinho";
             ViewBag.Curso = "Análise e Desenvolvimento de Sistemas";
             ViewBag.Semestre = "3º Semestre";
             
             return View();
         }
 
-        //int id que recebe o ID do aluno
+        //Método Detalhes(int id) que recebe o ID do aluno
         public IActionResult Detalhes(int id)
         {
             ViewBag.Id = id;
             
             if (id == 1)
-                ViewBag.Nome = "Nome";
+                ViewBag.Nome = "Joaozinho";
             else
                 ViewBag.Nome = $"Aluno Código {id}";
 

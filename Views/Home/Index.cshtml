@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Início";
+}
+
+<div class="w-100 py-5 text-center position-relative" style="background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); min-height: 75vh; display: flex; align-items: center;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-8">
+                
+                <h1 class="display-3 font-weight-bold mb-3" style="color: #58317e; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; letter-spacing: -1px;">
+                    UNINOVE
+                </h1>
+                
+                <h2 class="h3 text-secondary font-weight-normal mb-4">
+                    Bem-vindo ao Portal Acadêmico
+                </h2>
+                
+                <p class="lead text-muted mx-auto mb-5" style="max-width: 650px; font-size: 1.15rem; line-height: 1.8;">
+                    Uma plataforma moderna desenvolvida em ASP.NET Core MVC estruturada para facilitar o gerenciamento, consulta e integração dos módulos estudantis.
+                </p>
+                
+                <div class="mt-4">
+                    <a asp-controller="Aluno" asp-action="Index" class="btn btn-lg shadow-sm px-5 py-3 font-weight-bold text-white transition-all" style="background-color: #58317e; border-radius: 30px; font-size: 1.1rem;">
+                        Acessar Área do Aluno ➡️
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

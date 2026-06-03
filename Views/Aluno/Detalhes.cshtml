@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Detalhes do Aluno";
+}
+
+<div class="body-formulario">
+    <div class="card-formulario text-center">
+        <h2 class="titulo-uninove">Perfil do Aluno</h2>
+        <hr class="mb-4">
+        
+        <p class="fs-5 text-secondary mb-3">Você está visualizando os dados do estudante:</p>
+        
+        <div class="p-3 mb-4 rounded" style="background-color: #f1f0f5; border-left: 5px solid #58317e;">
+            <span class="fs-2 fw-bold" style="color: #58317e;">Código: #@ViewBag.Id</span>
+        </div>
+        
+        <p class="text-muted small mb-4">Dados carregados dinamicamente via AlunoController.</p>
+        
+        <a asp-controller="Aluno" asp-action="Index" class="botao-roxo text-decoration-none d-block text-center" style="background-color: #6c757d;">
+            Voltar para Lista
+        </a>
+    </div>
+</div>

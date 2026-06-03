@@ -1,0 +1,36 @@
+HTML
+@{
+    ViewData["Title"] = "Lista de Alunos";
+}
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 style="color: #58317e; font-weight: bold;">Alunos Cadastrados</h2>
+        <span class="badge p-2 text-white" style="background-color: #58317e;">Painel Acadêmico</span>
+    </div>
+
+    <div class="table-responsive bg-white shadow-sm rounded border">
+        <table class="table table-hover align-middle mb-0">
+            <thead class="text-white" style="background-color: #58317e;">
+                <tr>
+                    <th class="py-3 px-4">Nome</th>
+                    <th class="py-3">Curso</th>
+                    <th class="py-3">Semestre</th>
+                    <th class="py-3 text-center">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="py-3 px-4 fw-bold">@ViewBag.Nome</td>
+                    <td>@ViewBag.Curso</td>
+                    <td><span class="badge bg-light text-dark border">@ViewBag.Semestre</span></td>
+                    <td class="text-center">
+                        <a asp-controller="Aluno" asp-action="Detalhes" asp-route-id="1" class="btn btn-sm text-white px-3" style="background-color: #58317e;">
+                            Ver Detalhes
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
