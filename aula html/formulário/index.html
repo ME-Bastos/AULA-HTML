@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "Contato - UNINOVE";
+}
+
+<div class="container mt-5 d-flex justify-content-center">
+    <div class="card shadow p-4" style="max-width: 450px; width: 100%; border-radius: 8px;">
+        
+        <h1 class="text-center mb-4" style="color: #5b327a; font-weight: bold; font-size: 28px;">UNINOVE</h1>
+        
+        <form asp-controller="Contato" asp-action="Enviar" method="POST" class="d-flex flex-direction-column">
+            
+            <div class="mb-3">
+                <label for="nome" class="form-label fw-bold text-secondary">Nome:</label>
+                <input type="text" id="nome" name="nome" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label fw-bold text-secondary">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="assunto" class="form-label fw-bold text-secondary">Assunto:</label>
+                <select id="assunto" name="assunto" class="form-select" required>
+                    <option value="">Selecione um assunto</option>
+                    <option value="Suporte Técnico">Suporte Técnico</option>
+                    <option value="Comercial">Comercial</option>
+                    <option value="Sugestões">Sugestões</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="mensagem" class="form-label fw-bold text-secondary">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" class="form-control" required></textarea>
+            </div>
+
+            <button type="submit" class="btn w-100 text-white fw-bold" style="background-color: #5b327a; padding: 12px; border-radius: 6px;">
+                Enviar
+            </button>
+        </form>
+    </div>
+</div>
