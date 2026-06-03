@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador Interativo</title>
+</head>
+<body style="text-align: center; margin-top: 50px;">
+    
+    <h1 id="numero">0</h1>
+    
+    <button id="btnIncrementar">Incrementar</button>
+    <button id="btnDecrementar">Decrementar</button>
+    <button id="btnZerar">Zerar</button>
+
+    <script>
+        //Variável começando em 0
+        let contador = 0;
+        
+        const h1Numero = document.getElementById("numero");
+        const btnInc = document.getElementById("btnIncrementar");
+        const btnDec = document.getElementById("btnDecrementar");
+        const btnZer = document.getElementById("btnZerar");
+
+        
+        function atualizarTela() {
+            h1Numero.textContent = contador; // Atualiza o texto
+            
+         
+            if (contador > 0) {
+                h1Numero.style.color = "green";
+            } else if (contador < 0) {
+                h1Numero.style.color = "red";
+            } else {
+                h1Numero.style.color = "black";
+            }
+        }
+
+        
+        btnInc.addEventListener("click", function() {
+            contador++; // Aumenta 1
+            atualizarTela();
+        });
+
+        btnDec.addEventListener("click", function() {
+            contador--; // Diminui 1
+            atualizarTela();
+        });
+
+        btnZer.addEventListener("click", function() {
+            contador = 0; // Zera
+            atualizarTela();
+        });
+    </script>
+</body>
+</html>
