@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "Catálogo de Produtos";
+    var produtos = ViewBag.Produtos as List<string>;
+    var precos = ViewBag.Precos as List<double>;
+}
+
+<h1>Catálogo de Produtos</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Preço (R$)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 0; i < produtos.Count; i++)
+        {
+            string estiloCor = "";
+            if (precos[i] < 100)
+            {
+                estiloCor = "color: green !important; font-weight: bold;";
+            }
+
+            <tr>
+                <td style="@estiloCor">@(i + 1)</td>
+                <td style="@estiloCor">@produtos[i]</td>
+                <td style="@estiloCor">R$ @precos[i].ToString("F2")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<hr />
+<h4>Total: @produtos.Count produtos</h4>
