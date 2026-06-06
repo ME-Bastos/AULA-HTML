@@ -1,5 +1,7 @@
 # AULA-HTML
 
+Aprendendo a usar o repositório no github fazendo tudo diretamente por ele.
+
 Projeto: Calculadora Interativa (HTML, CSS e JavaScript), aula 06.
 
 ## 🛠️ Tecnologias Utilizadas
