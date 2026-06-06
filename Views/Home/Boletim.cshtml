@@ -1,0 +1,75 @@
+@{
+    ViewData["Title"] = "Boletim de Notas";
+    var disciplinas = ViewBag.Disciplinas as List<string>;
+    var notas = ViewBag.Notas as List<double>;
+    
+    // Variável para acumular as notas e calcular a média depois
+    double somaNotas = 0;
+}
+
+<h1>Boletim de Notas</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Disciplina</th>
+            <th>Nota</th>
+            <th>Status</th>
+            <th>Classificação</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 0; i < disciplinas.Count; i++)
+        {
+            var notaAtual = notas[i];
+            somaNotas += notaAtual; // Somando para o cálculo final
+
+            // @if para definir texto e cor do Status
+            string estiloStatus = "";
+            string textoStatus = "";
+            
+            if (notaAtual >= 5)
+            {
+                estiloStatus = "color: green !important; font-weight: bold;";
+                textoStatus = "Aprovado";
+            }
+            else
+            {
+                estiloStatus = "color: red !important; font-weight: bold;";
+                textoStatus = "Reprovado";
+            }
+
+            //@switch para definir a Letra (Classificação)
+            string classificacao = "";
+            switch (notaAtual)
+            {
+                case >= 9:
+                    classificacao = "A";
+                    break;
+                case >= 7:
+                    classificacao = "B";
+                    break;
+                case >= 5:
+                    classificacao = "C";
+                    break;
+                default:
+                    classificacao = "D";
+                    break;
+            }
+
+            <tr>
+                <td>@disciplinas[i]</td>
+                <td>@notaAtual.ToString("F1")</td>
+                <td style="@estiloStatus">@textoStatus</td>
+                <td><strong>@classificacao</strong></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<hr />
+
+@{
+    double mediaGeral = somaNotas / disciplinas.Count;
+}
+<h4>Média Geral do Semestre: @mediaGeral.ToString("F1")</h4>

@@ -30,6 +30,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bm8vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/workspaces/AULA-HTML/Views/Home/Boletim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Cb2xldGltLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/workspaces/AULA-HTML/Views/Home/contato.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9jb250YXRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
