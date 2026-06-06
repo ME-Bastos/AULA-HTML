@@ -69,7 +69,7 @@ function calcular() {
     atualizarDisplay();
 }
 
-// Reseta a calculadora para o estado inicial (Botão C)
+// Reseta a calculadora para o estado inicial (C)
 function limparTela() {
     valorAtual = "0";
     valorAnterior = "";
