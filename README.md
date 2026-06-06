@@ -15,6 +15,8 @@ A inteligência da calculadora foi desenvolvida puramente em JavaScript utilizan
 ### ➕ Soma
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e33e1fba-1bd3-4c1f-8b17-ebe6ce85ae06" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/03d34714-7463-414a-88d3-108de33956ab" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1cfa65a2-18b0-40f8-a274-f78c12b98020" />
+
 5+5=10
 
 ### ➖ Subtração
@@ -29,6 +31,7 @@ A inteligência da calculadora foi desenvolvida puramente em JavaScript utilizan
 
 ### ➗ Divisão
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b146a438-5fda-4e9a-8069-18a10c28fa60" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2db3300b-1e30-49f3-b10f-9d9cbfa0316e" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cc27aefe-a6ea-42e9-85fe-2a66759537d7" />
+
 15/7 = 2.142857142857143 (teste se aparece os números quebrados)
 
