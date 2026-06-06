@@ -74,7 +74,7 @@ body {
     background-color: #8e8e8e;
 }
 
-/* Botões maiores */
+/* Deixa os botões maiores */
 .btn.mais {
     grid-row: span 2;
     height: 100%;

@@ -40,7 +40,7 @@ function calcular() {
     const num1 = parseFloat(valorAnterior);
     const num2 = parseFloat(valorAtual);
 
-    // Estrutura condicional para executar as 4 operações exigidas
+    // Estrutura condicional para executar as 4 operações
     switch (operador) {
         case "+":
             resultado = num1 + num2;
