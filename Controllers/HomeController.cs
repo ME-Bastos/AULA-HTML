@@ -29,4 +29,13 @@ public class HomeController : Controller
 {
     return View();
 }
+public IActionResult Boletim()
+{
+    //listas de disciplinas e notas
+    ViewBag.Disciplinas = new List<string> { "Matemática", "Desenvolvimento Web", "Banco de Dados", "Inglês", "Algoritmos" };
+    
+    ViewBag.Notas = new List<double> { 9.5, 6.0, 4.2, 7.5, 8.0 };
+
+    return View();
+}
 }
