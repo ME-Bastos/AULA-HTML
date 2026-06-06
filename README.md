@@ -16,6 +16,7 @@ A inteligência da calculadora foi desenvolvida puramente em JavaScript utilizan
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e33e1fba-1bd3-4c1f-8b17-ebe6ce85ae06" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/03d34714-7463-414a-88d3-108de33956ab" />
 5+5=10
+
 ### ➖ Subtração
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a2558add-d30f-44f7-9579-31d7c87cfbd1" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6f5ef22a-e638-4fb8-8c29-a66d9d57f4d6" />
