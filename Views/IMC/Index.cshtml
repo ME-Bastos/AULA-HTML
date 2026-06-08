@@ -1,0 +1,43 @@
+@model AULA_HTML.Models.ImcModel
+
+@{
+    ViewData["Title"] = "Calculadora de IMC";
+}
+
+<div class="container mt-4" style="max-width: 500px;">
+    <h2 class="mb-4 text-center">Calculadora de IMC</h2>
+
+    <form asp-action="Index" asp-controller="Imc" method="post" class="card p-4 shadow-sm mb-4">
+        
+        @if (!string.IsNullOrEmpty(Model?.ErrorMessage))
+        {
+            <div class="alert alert-danger small p-2 text-center">@Model.ErrorMessage</div>
+        }
+
+        <div class="mb-3">
+            <label asp-for="Peso" class="form-label">Peso (kg)</label>
+            <input asp-for="Peso" class="form-control" type="text" placeholder="Ex: 80 ou 75.5" />
+            <span asp-validation-for="Peso" class="text-danger small"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Altura" class="form-label">Altura (metros)</label>
+            <input asp-for="Altura" class="form-control" type="text" placeholder="Ex: 1.60 ou 1.75" />
+            <span asp-validation-for="Altura" class="text-danger small"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100 mt-2">Calcular IMC (Server Side)</button>
+    </form>
+
+    @if (Model != null && Model.ValorImc.HasValue)
+    {
+        <div class="card shadow-sm p-4 text-center border-success alert-success">
+            <h5 class="card-title border-bottom pb-2 mb-3 text-success">Resultado do Cálculo</h5>
+            <p class="mb-1"><strong>Peso enviado:</strong> @Model.Peso kg</p>
+            <p class="mb-3"><strong>Altura enviada:</strong> @Model.Altura m</p>
+            
+            <h3 class="text-success font-weight-bold mb-1">IMC: @Model.ValorImc?.ToString("F2")</h3>
+            <h4 class="text-secondary mb-0">Classificação: <span class="badge bg-success">@Model.Classificacao</span></h4>
+        </div>
+    }
+</div>
