@@ -1,0 +1,25 @@
+@model AULA_HTML.Models.Aluno
+
+@{
+    ViewData["Title"] = "Confirmação de Cadastro";
+}
+
+<div class="container mt-4" style="max-width: 600px;">
+    <div class="alert alert-success shadow-sm text-center" role="alert">
+        <h4 class="alert-heading">Cadastro Realizado com Sucesso!</h4>
+        <p class="mb-0">Os dados do aluno foram processados via Model Binding com sucesso.</p>
+    </div>
+
+    <div class="card shadow-sm p-4 mt-3">
+        <h5 class="card-title border-bottom pb-2 mb-3">Dados Cadastrados:</h5>
+        
+        <p><strong>Nome:</strong> @Model.Nome</p>
+        <p><strong>E-mail:</strong> @Model.Email</p>
+        <p><strong>RA:</strong> @Model.RA</p>
+        <p><strong>Curso:</strong> @Model.Curso</p>
+        <p><strong>Data de Nascimento:</strong> @Model.DataNascimento.ToString("dd/MM/yyyy")</p>
+
+        <hr />
+        <a asp-action="Cadastrar" class="btn btn-outline-success w-100">Cadastrar outro aluno</a>
+    </div>
+</div>

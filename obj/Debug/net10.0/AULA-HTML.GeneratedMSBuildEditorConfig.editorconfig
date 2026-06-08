@@ -30,6 +30,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bm8vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/workspaces/AULA-HTML/Views/Cadastro/cadastrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FkYXN0cm8vY2FkYXN0cmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/AULA-HTML/Views/Cadastro/confirmação.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FkYXN0cm8vY29uZmlybWHDp8Ojby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/workspaces/AULA-HTML/Views/Home/Boletim.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Cb2xldGltLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
