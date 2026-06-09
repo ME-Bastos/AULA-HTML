@@ -38,6 +38,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FkYXN0cm8vY29uZmlybWHDp8Ojby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/workspaces/AULA-HTML/Views/Endereco/confirmacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW5kZXJlY28vY29uZmlybWFjYW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/workspaces/AULA-HTML/Views/Endereco/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW5kZXJlY28vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/workspaces/AULA-HTML/Views/Home/Boletim.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Cb2xldGltLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

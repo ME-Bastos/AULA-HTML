@@ -1,0 +1,49 @@
+@model AULA_HTML.Models.EnderecoModel
+
+@{
+    ViewData["Title"] = "Dados Confirmados";
+}
+
+<div class="container mt-4" style="max-width: 600px;">
+    <div class="card shadow-sm border-success">
+        <div class="card-header bg-success text-white text-center">
+            <h3>Endereço Cadastrado com Sucesso!</h3>
+        </div>
+        <div class="card-body p-4">
+            <h5 class="text-secondary border-bottom pb-2 mb-3">Dados Recebidos pelo Servidor (Somente Leitura)</h5>
+            
+            <table class="table table-striped table-bordered">
+                <tbody>
+                    <tr>
+                        <th style="width: 30%;">CEP:</th>
+                        <td>@Model.Cep</td>
+                    </tr>
+                    <tr>
+                        <th>Logradouro:</th>
+                        <td>@Model.Logradouro</td>
+                    </tr>
+                    <tr>
+                        <th>Número:</th>
+                        <td>@Model.Numero</td>
+                    </tr>
+                    <tr>
+                        <th>Complemento:</th>
+                        <td>@(string.IsNullOrEmpty(Model.Complemento) ? "Nenhum" : Model.Complemento)</td>
+                    </tr>
+                    <tr>
+                        <th>Bairro:</th>
+                        <td>@Model.Bairro</td>
+                    </tr>
+                    <tr>
+                        <th>Cidade / UF:</th>
+                        <td>@Model.Cidade - @Model.Uf</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="text-center mt-4">
+                <a asp-action="Index" class="btn btn-outline-primary">Buscar Novo CEP</a>
+            </div>
+        </div>
+    </div>
+</div>
