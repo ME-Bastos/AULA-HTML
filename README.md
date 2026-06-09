@@ -2,9 +2,11 @@
 
 Aprendendo a usar o repositório no github fazendo tudo diretamente por ele.
 
+Fiz todos os projetos de trabalhos pedidos em aula nesse mesmo repositório.
+
 Projeto: Calculadora Interativa (HTML, CSS e JavaScript), aula 06.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 - HTML: Estruturação da calculadora utilizando tags semânticas e mapeamento de botões via eventos nativos (`onclick`).
 - CSS: Estilização baseada em CSS Grid e Flexbox, criando um tema escuro (*Dark Mode*) com feedbacks visuais ao passar o mouse (`:hover`) e clicar (`:active`).
 - JavaScript: Lógica de programação para captura de dados, controle de estado de memória e execução dos cálculos matemáticos.
@@ -37,3 +39,5 @@ A inteligência da calculadora foi desenvolvida puramente em JavaScript utilizan
 
 15/7 = 2.142857142857143 (teste se aparece os números quebrados)
 
+Atividades do formulário de contato estão como "Aluno" e como "Formulario", as duas primeiras atividades por serem complementares estão juntas.
+As atividades da calculadora estão com esse nome, o cadastro de produtos está nos arquivos com nome de produto, os de cadastro de aluno (atividade da aula 10) está com nome de cadastro para não repetir com o aluno, os arquivos de IMC também tem esse nome e do CEP tem nome de "Endereco.
